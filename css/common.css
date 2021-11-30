@@ -1,0 +1,36 @@
+/* 清除元素默认样式 */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,button {
+    margin: 0;
+    padding: 0;
+}
+/* 去除列表里的点 */
+li {
+    list-style: none;
+}
+/* 去除链接里的下滑线 */
+a {
+    text-decoration: none;
+}
+/* 图片居中 */
+img {
+    vertical-align: middle;
+    /* display: block; */
+}
+/* 万能清除浮动法 */
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 左浮动 */
+.fl {
+    float: left;
+}
+/* 右浮动 */
+.fr {
+    float: right;
+}
+/* 默认字体 */
+/* body {
+    font-size: 12px;
+} */
